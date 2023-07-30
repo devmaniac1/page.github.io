@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Reisen Sitemap</title>
+    <link rel="stylesheet" href="./CSS/SitemapStyle.css">
+    <script>
+        function changeTheme(theme) {
+            document.body.classList.remove('light');
+            document.body.classList.remove('dark');
+            document.body.classList.remove('natural');
+            document.body.classList.add(theme);
+        }
+
+        window.addEventListener('scroll', function() {
+        var navbar = document.querySelector('.navbar');
+        var scrolled = window.scrollY > 0;
+
+        if (scrolled) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+        });;
+    </script>
+
+</head>
+<body>
+
+    <!-- <nav class="navbar" id="navbar">
+        <div class="logo">
+            <img src="./Images/logo.png" alt="Logo">
+        </div>
+        <div class="nav">
+            <a href="MainPage.html">Home</a>
+            <a href="CommentForm.html">Comments</a>
+            <a href="">Book</a>
+            <a href="Quiz.html">Quiz</a>
+            <a href="GalleryCover.html">Gallery</a>
+            <a href="Aboutus.html">About Us</a>
+        </div>
+    </nav> -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <img src="Images/logo.png" alt="Logo">
+        </div>
+        <div class="nav">
+            <a href="MainPage.html">Home</a>
+            <a href="CommentForm.html">Comments</a>
+            <a href="Book.html">Book</a>
+            <a href="Quiz.html">Quiz</a>
+            <a href="GalleryCover.html">Gallery</a>
+            <a href="Sitemap.html">Site Map</a>
+            <a href="Aboutus.html">About Us</a>
+        </div>
+    </nav>
+    <br><br><br>
+
+    <div class="top">
+        <label  id="topic"> Sitemap</label>
+    </div>
+    <div class="Themes">
+        <h3>Themes:</h3>
+        <label for="Light">
+            <input type="radio" name="theme" id="Light" checked onclick="changeTheme('light')">
+            <span class="radioLabel">Light</span>
+        </label>
+        <label for="Dark">
+            <input type="radio" name="theme" id="Dark" onclick="changeTheme('dark')">
+            <span class="radioLabel">Dark</span>
+        </label>
+        <label for="Natural">
+            <input type="radio" name="theme" id="Natural" onclick="changeTheme('natural')">
+            <span class="radioLabel">Natural</span>
+        </label>
+    </div>
+
+    <br><br>
+    
+    <div class="marqueeMessege">
+        <!--<marquee direction="padding-left"><p><b>Welcome! Reisen Travelling.  It is our responsibility to guide you.</b></p></marquee>-->
+        <p><b>Welcome! Reisen Travelling.  It is our responsibility to guide you.</b></p>
+    </div>
+    
+    <div class="sitemapTable">
+        <table class="hometh">      
+                <th colspan="7">
+                    <svg width="150" height="75">
+                        <rect width="150" height="75" ></rect>
+                        <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"><a href="./MainPage.html">HOME</a></text>
+                    </svg>
+                    
+                </th>
+        </table>
+
+        <table>
+
+            <tr id="space">    
+            </tr>
+
+            <tr>
+                <th id="spacer">
+                    <svg width="150" height="75">
+                        <rect width="150" height="75"></rect>
+                        <text x="50%" y="50%"  text-anchor="middle" dominant-baseline="middle"><a href="#contents">Content</a></text>
+                    </svg>
+                        
+                </th>
+
+                <th id="spacer"> 
+                    <svg width="150" height="75">
+                        <rect width="150" height="75"></rect>
+                        <text x="49%" y="50%" text-anchor="middle" dominant-baseline="middle"><a href="./Book.html">Book  </a></text>
+                    </svg>
+                </th>
+
+                <th id="spacer"> 
+                    <svg width="150" height="75">
+                        <rect width="150" height="75"></rect>
+                        <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"><a href="./CommentForm.html">Comments</a></text>
+
+
+                    </svg>
+                </th id="spacer">
+
+                <th id="spacer"> 
+                    <svg width="150" height="75">
+                        <rect width="150" height="75"></rect>
+                        <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"><a href="./Quiz.html">Quiz</a></text>
+                    </svg>
+                </th>
+
+                <th id="spacer"> 
+                    <svg width="150" height="75">
+                        <rect width="150" height="75"></rect>   
+                        <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"><a href="./Aboutus.html">About Us</a></text>
+                    </svg>
+                </th>
+
+
+                <th>
+                    <svg width="150" height="75">
+                        <rect width="150" height="75"></rect>
+                        <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"><a href="./GalleryCover.html">Gallery</a></text>
+
+
+                    </svg>
+                </th>
+            </tr>
+        </table> 
+    </div>
+    <br><br>
+    <div class="DestinationsDiv" id="contents">
+        <h1 class="label">Our Destinations</h1>
+        <div class="destinations">
+            <div class="destination">
+                <img src="images/kandy.jpg" alt="Destination 1">
+                <p class="Name">Kandy</p>
+                <a href="https://destination1.com" target="_blank"></a>
+            </div>
+            <div class="destination">
+                <a href="ContentPage - Binada.html"><span><img src="./Images/img6.jpeg" alt="2"></span></a>
+                <p class="Name">Ella</p>
+            </div>
+            <div class="destination">
+                <a href="ContentPage - Ashfaq.html"><span><img src="./Images/nuwara2.jpg" alt="2"></span></a>
+                <p class="Name">Nuwara Eliya</p>
+            </div>
+            <div class="destination">
+                <a href="ContentPage - Saleem.html"><span><img src="./Images/hikkaduwa.jpeg" alt="2"></span></a>
+                <p class="Name">Hikkaduwa</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="description blink">
+        <hr>
+            You will receive the proper direction from this sitemap..
+        <hr>
+    </div>
+    <img src="./Images/logo.png" alt="logo" id="footLogo">
+    <br>
+
+    <div class="editor">
+        <a href="pageEditor-Binada.html" style="text-decoration: none;">
+            <span><img src="./Images/editor.png" alt="2"></span>
+        </a>
+        <a href="pageEditor-Binada.html" style="text-decoration: none;">
+            <p class="editortag">Editor's Page</p>
+        </a>  
+    </div>
+    
+    <div class="main-footer">
+        <div class="footer-col-1">
+            <img src="./Images/logo.png" alt="">
+            <h4>Travel With Us</h4>
+        </div>
+        <div class="footer-col-1">
+            <h3>Social</h3>
+            <a href="https://github.com/devmaniac1/" class="social"><i class="fa fa-github" style="font-size:30px;"></i></a>
+            <a href="https://web.whatsapp.com/" class="social"><i class="fa fa-whatsapp" style="font-size:30px;"></i></a>
+            <a href="https://instagram.com" class="social"><i class="fa fa-instagram" style="font-size:30px;"></i></a>
+        </div>
+        <div class="footer-col-1">
+            <h3>Quick Links</h3>
+            <a href="CommentForm.html">Comments</a>
+            <a href="Book.html">Shop</a>
+            <a href="Quiz.html">Quiz</a>
+            <a href="Sitemap.html">Site Map</a>
+            <a href="Aboutus.html">About us</a>
+        </div>
+        <div class="footer-col-1">
+            <h3>Contact Us</h3>
+            <p>Get in touch with us for new offers</p>
+            <input type="email" placeholder="Email Address"><br>
+            <input type="tel" placeholder="Mobile Number"><br>
+            <input type="submit" value="Notify Us">
+        </div>
+    </div>
+    <footer>
+        <h5><span>&copy;</span> No Copying 2023</h5>
+    </footer>
+
+    
+</body>
+</html>

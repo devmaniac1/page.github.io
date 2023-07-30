@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/BookingPageStyle.css">
+    <title>Booking Form</title>
+</head>
+<body class="main_bg">
+    <div class="form">
+        <div class="form-text">
+            <h1><span><img src="./Images/art-1.png" alt=""></span>Book Now <span><img src="./Images/art-1.png" alt=""></span></h1>
+            <p>Thank you for choosing us!</p>
+        </div>
+        <div class="main-form">
+            <form id="bookingForm" action="paynow.html" method="get">
+                <div>
+                    <span>Your full name ?</span>
+                    <input type="text" name="name" id="name" placeholder="Write your name here..." required>
+                </div>
+                <div>
+                    <span>Your email address ?</span>
+                    <input type="email" name="email" id="email" placeholder="Write your email here..." required>
+                </div>
+                <div>
+                    <span>Where are you going?</span>
+                    <select name="location" id="location" required>
+                        <option value=""></option>
+                        <option value="Sigiriya">Sigiriya</option>
+                        <option value="Kandy">Kandy</option>
+                        <option value="Hikkaduwa">Hikkaduwa</option>
+                        <option value="Mirissa">Mirissa</option>
+                        <option value="Galle">Galle</option>
+                        <option value="Nine Arch Bridge">Nine Arch Bridge</option>
+                        <option value="Little adams peak">Little adams peak</option>
+                        <option value="Anuradhapura">Anuradhapura</option>
+                    </select>
+                </div>
+                <div>
+                    <span>How many people?</span>
+                    <input type="text" name="people" id="people" placeholder="How many " required>
+                </div>
+                <div>
+                    <span>What is the date?</span>
+                    <input type="date" name="date" id="date" required>
+                </div>
+                <div>
+                    <span>Your phone number?</span>
+                    <input type="tel" name="number" id="number" placeholder="Write your phone number here..." required>
+                </div>
+                <div id="submit">
+                    <input type="submit" value="SUBMIT" id="submitButton">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        // Retrieve form data and store it in localStorage on form submission
+        document.getElementById("bookingForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission (default behavior)
+
+            // Get form data
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const location = document.getElementById("location").value;
+            const people = document.getElementById("people").value;
+            const date = document.getElementById("date").value;
+            const number = document.getElementById("number").value;
+
+            // Store form data in localStorage
+            localStorage.setItem("name", name);
+            localStorage.setItem("email", email);
+            localStorage.setItem("location", location);
+            localStorage.setItem("people", people);
+            localStorage.setItem("date", date);
+            localStorage.setItem("number", number);
+
+            // Redirect to paynow.html
+            window.location.href = "paynow.html";
+        });
+    </script>
+</body>
+</html>

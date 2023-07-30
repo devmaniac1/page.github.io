@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./CSS/paynow.css">
+</head>
+<body>
+    <div class="container">
+        <form id="paymentForm">
+          <p><h1>Payment Details</h1></p>
+          <p>* Indicates a required field</p>
+          <label for="payment">Select Payment Method:*</label>
+          <select id="payment" name="payment" required>
+            <option value="" disabled selected>-Please Select-</option>
+            <option value="Credit Card">Credit Card</option>
+            <option value="Debit Card">Debit Card</option>
+            <option value="PayPal">PayPal</option>
+          </select>
+          <label for="card">Card Number:*</label>
+          <input type="text" id="card" name="card" placeholder="1111-1111-1111-1111" maxlength="16" required>
+          <label for="name">Cardholder's Name:*</label>
+          <input type="text" id="name" name="name" placeholder="Cardholder's Name.." required>
+
+          <!-- Display the form data retrieved from localStorage -->
+          <h2>Details From Book :</h2>
+          <p><strong>Full Name:</strong> <span id="nameDetails"></span></p>
+          <p><strong>Email Address:</strong> <span id="emailDetails"></span></p>
+          <p><strong>Location:</strong> <span id="locationDetails"></span></p>
+          <p><strong>Number of People:</strong> <span id="peopleDetails"></span></p>
+          <p><strong>Date:</strong> <span id="dateDetails"></span></p>
+          <p><strong>Phone Number:</strong> <span id="numberDetails"></span></p>
+
+          <button type="submit">Confirm and Pay</button>
+          <button type="button" style="background: red;" onclick="goBack()">Back</button>
+        </form>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        // Retrieve form data from localStorage and display it
+        document.getElementById("nameDetails").textContent = localStorage.getItem("name");
+        document.getElementById("emailDetails").textContent = localStorage.getItem("email");
+        document.getElementById("locationDetails").textContent = localStorage.getItem("location");
+        document.getElementById("peopleDetails").textContent = localStorage.getItem("people");
+        document.getElementById("dateDetails").textContent = localStorage.getItem("date");
+        document.getElementById("numberDetails").textContent = localStorage.getItem("number");
+
+        // Submit the payment form
+        document.getElementById("paymentForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+          
+
+            // Redirect to thankyou.html
+            window.location.href = "thankyou.html";
+        });
+    </script>
+</body>
+</html>

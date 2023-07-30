@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Page Editor</title>
+    <link rel="stylesheet" href="./CSS/pageEditor.css">
+    
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <img src="reisenlogo.jpg" alt="Logo">
+        </div>
+        <div class="nav">
+            <a href="MainPage.html">Home</a>
+            <a href="CommentForm.html">Comments</a>
+            <a href="Book.html">Book</a>
+            <a href="Quiz.html">Quiz</a>
+            <a href="Sitemap.html">Site Map</a>
+            <a href="GalleryCover.html">Gallery</a>
+            <a href="Aboutus.html">About Us</a>
+        </div>
+    </nav>
+    
+        <br><br><br><br>
+        <h1>Page Editor</h1>
+        <br>
+    <div class="bio">
+        <img class="dp" src="./Images/me.jpg" alt="Harshana">
+        <br>
+        <h3>Name :- Harshana Dilshan Panagoda</h3>
+        <br>
+        <h3>Student id:- 20221580 / w1998772</h3>
+        <br>
+        <h3>Role:- Student 1</h3>
+    </div><br>
+
+    <p class="myedits">My Edits On This Project!</p>
+
+    <div class="tasktitle">
+        <p class="taskTopic">Splash Screen</p>
+        <ul type="none">
+            <li> I created the Splash Screen using html, javascript and CSS.</li>
+            <li> Gave some brief introduction about this project.</li>
+            <li> Added all team members names with student role.</li>
+            
+        </ul>
+        <a href="splashscreen.html" class="PElink">Click Here To Visit Splash Screen</a>
+    </div>
+    <br>
+    <hr>
+
+    <div class="tasktitle">
+        <p class="taskTopic">Booking Page</p>
+        <ul type="none">
+            <li>I created this Booking page using html, javascript and CSS.</li>
+            <li>In Addition i used some  external sources. </li>
+            <li>This page display one of the main page in our web site. </li>
+            <li></li>
+            
+        </ul>
+        <a href="Book.html" class="PElink">Click Here To Visit Booking Page</a>
+    </div>
+    <br>
+    <hr>
+
+    <div class="tasktitle">
+        <p class="taskTopic">Booking detail form </p>
+        <ul type="none">
+            <li>This page get user details to book travel destination.</li>
+            <li>I created this form using html, javascript and CSS.</li>
+            <li>Also I link this page with my main booking page using button called "book now".</li>
+            <li>after fill this form, when user clicked submit button it's redirect to chechkout page. </li>
+        </ul>
+        <a href="BookingPage.html" class="PElink">Click Here To Visit</a>
+    </div>
+    <br>
+    <hr>
+
+    <div class="tasktitle">
+        <p class="taskTopic">Checkout page</p>
+        <ul type="none">
+            <li>Using this page user can check booking details are corrected or incorrect.</li>
+            <li>Also user can purchase using options given in this page. such as debit card,credit card and paypal.</li>
+            <li>After filling this form submiting "comfirm and pay" user will get final stage of the purchasing order. </li>
+            
+        </ul>
+        <a href="paynow.html" class="PElink">Click Here To Visit </a>
+    </div>
+    <br>
+    <hr>
+    <div class="tasktitle">
+        <p class="taskTopic">Thank you Card</p>
+        <ul type="none">
+            <li>This page notify user payments are taken or not.</li>
+            <li>This is end screen of my works.</li>
+            <li>I created this page using html and Css.</li>   
+        </ul>
+        <a href="Thankyou.html" class="PElink">Click Here To Visit </a>
+    </div>
+    <br>
+    <div class="main-footer">
+        <div class="footer-col-1">
+            <img src="./Images/reisenlogo.jpg" alt="Reisen">
+            <h4>Travel With Us</h4>
+        </div>
+        <div class="footer-col-1">
+            <h3>Social</h3>
+            <a href="https://github.com/devmaniac1/" class="social"><i class="fa fa-github" style="font-size:30px;"></i></a>
+            <a href="https://web.whatsapp.com/" class="social"><i class="fa fa-whatsapp" style="font-size:30px;"></i></a>
+            <a href="https://instagram.com" class="social"><i class="fa fa-instagram" style="font-size:30px;"></i></a>
+        </div>
+        <div class="footer-col-1">
+            <h3>Quick Links</h3>
+            <a href="CommentForm.html">Comments</a>
+            <a href="Book.html">Book</a>
+            <a href="Quiz.html">Quiz</a>
+            <a href="Sitemap.html">Site Map</a>
+            <a href="Aboutus.html">About us</a>
+        </div>
+        <div class="footer-col-1">
+            <h3>Contact Us</h3>
+            <p>Get in touch with us for new offers</p>
+            <input type="email" placeholder="Email Address"><br>
+            <input type="tel" name="" id="" placeholder="Mobile Number"><br>
+            <input type="submit" value="Notify Us">
+        </div>
+    </div>
+    <footer>
+        <h5><span>&copy;</span> No Copying 2023</h5>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+        var navbar = document.querySelector('.navbar');
+        var scrolled = window.scrollY > 0;
+
+        if (scrolled) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+        });
+    </script>
+ 
+    
+</body>
+</html>

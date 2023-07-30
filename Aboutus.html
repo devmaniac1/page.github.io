@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Reisen Travelling</title>
+    <link rel="stylesheet" href="./CSS/AboutUsStyle.css">
+    <link rel="icon" type="png/jpg" href="./Images/logo.png">
+
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <img src="./Images/logo.png" alt="Logo">
+        </div>
+        <div class="nav">
+            <a href="MainPage.html">Home</a>
+            <a href="CommentForm.html">Comments</a>
+            <a href="Book.html">Shop</a>
+            <a href="Quiz.html">Quiz</a>
+            <a href="GalleryCover.html">Gallery</a>
+            <a href="Sitemap.html">Site Map</a>
+            <a href="#">About Us</a>
+        </div>
+    </nav>
+<div class="bo">
+    <div class="card">
+        <img src="./Images/harshana.jpg" alt="Harshana" class="card-image" >
+        <div class="card-body">
+            <h1 class="card-title">Harshana....<h1>
+            <p class="card-sub-topic">About Student 1 tasks<p>
+            <p class="card-info"></p><li> Presentation Page </li><li>Booking page</li></p>
+        </div>
+    </div>
+    
+    <div class="card">
+        <img src="./Images/ashfaq.jpg" class="card-image" alt="Ashfaq">
+        <div class="card-body">
+            <h1 class="card-title">Ashfaq<h1>
+            <p class="card-sub-topic">About Student 2 tasks<p>
+            <p class="card-info"><li>Main page </li><li>Comment form</li></p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./Images/Saleem.jpg" class="card-image" alt="">
+        <div class="card-body">
+            <h1 class="card-title">Saleem Malik<h1>
+            <p class="card-sub-topic">About Student 3 tasks<p>
+            <p class="card-info"><li>Detail page </li><li>Quiz page</li></p>
+        </div>
+    </div>
+  
+    <div class="card">    
+        <img src="./Images/bindu.jpg" alt="Binada" width="200" class="card-image">
+        <div class="card-body">
+            <h1 class="card-title">Binada<h1>
+            <p class="card-sub-topic">About Student 4 tasks<p>
+            <p class="card-info"><li>Site map page</li><li>Gallery page</li></p>
+        </div>
+    </div>
+
+    
+</div>
+<div class="editor">
+    <a href="pageEditor-Saleem.html">Page Devolop - Student 3</a>
+</div>
+<script>
+    window.addEventListener('scroll', function() {
+        var navbar = document.querySelector('.navbar');
+        var scrolled = window.scrollY > 0;
+
+        if (scrolled) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+</script>
+
+
+</body>
+</html> 
