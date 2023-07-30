@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #001e4d
+    /* background-image:linear-gradient(180deg,blue,pink); */
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+}
+.navbar.scrolled {
+    background-color: rgb(38, 49, 58);
+}
+
+.logo {
+    width: 20%;
+}
+
+.logo img {
+    width: 40px;
+    padding: 10px 0px 0px 10px;
+}
+
+.nav {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav a {
+    padding: 15px 5px 0px 0px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bolder;
+    transition: 0.5s ease;
+}
+
+.nav a:hover {
+    text-decoration: 2px solid red underline;
+    transform: scale(1.1);
+}
+.app{
+    background: #fff;
+    width: 100%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+.app h1{
+    font-weight: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+.quiz{
+    padding: 20px 0;
+}
+.quiz h2{
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+}
+.btn{
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition:all 0.3s;
+
+}
+.btn:hover : not([disabled]){
+    background: black;
+    color : #fff;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+#next-btn{
+    background: #001e4d ;
+    color:#fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+        
+}
+.correct{
+    background: greenyellow;
+}
+.incorrect{
+    background: red;
+}
+.editor{
+    padding: 50px;
+    text-align: end;
+}
+.editor a{
+    color: #fff;
+    padding: 10px;
+    background-color: orange;
+    border-radius: 20px;
+}

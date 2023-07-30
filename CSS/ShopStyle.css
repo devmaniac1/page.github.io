@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;400&family=Playfair+Display:wght@400;700&family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+/*   main */
+:root {
+    --primary-color: #2c3855;
+    --primary-color-dark: #435681;
+    --text-dark: #333333;
+    --text-light: #767268;
+    --extra-light: #f3f4f6;
+    --white: #ffffff;
+    --max-width: 1200px;
+  }
+
+  /* ashfq navigation cs*/
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color:rgba(208, 228, 237, 0.568);
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+.navbar.scrolled {
+    background-color: rgba(56, 87, 113, 0.515);
+}
+
+.logo {
+    width: 20%;
+}
+
+.logo img {
+    width: 62px;
+    padding: 10px  ;
+    border-radius:100%;
+    
+
+}
+
+.nav {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav a {
+    padding: 15px 5px 0px 0px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Rajdhani', sans-serif; /* nav font and colur*/
+    font-weight:bolder;
+    transition: 0.5s ease;
+}
+
+.nav a:hover {
+    text-decoration: 2px solid red underline;
+    transform: scale(1.1);
+}
+
+
+/*  youtube*/
+body {
+    font-family: "Poppins", sans-serif;
+  }
+
+.header__container {
+    padding: 4rem 1rem 5rem 1rem;
+  }
+  
+  .header__image__container {
+    position: relative;
+    min-height: 500px;
+    background-image: linear-gradient(
+        to right,
+        rgba(44, 56, 85, 0.9),
+        rgba(100, 125, 187, 0.1)
+      ),
+      url("../Images/shop\ banner.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+  }
+  
+  .header__content {
+    max-width: 600px;
+    padding: 5rem 2rem;
+  }
+  
+  .header__content h1 {
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    font-weight: 600;
+    color: var(--white);
+  }
+  
+  .header__content p {
+    color: var(--extra-light);
+  }
+
+
+  /* header image ekat yata kalla*/
+  /* trnsparent bar ekay basic text eki*/
+  .booking__container {
+    position: absolute;
+    bottom: -5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 6rem);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  }
+
+
+/* trnsparent bar ekay basic text eki.. lok wensk nah mm hithanne form eke kallak*/
+  .booking__container form {
+    width: 100%;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  /* trnsparent bar ekay basic text eki*/
+  .booking__container .input__group {
+    width: 100%;
+    position: relative;
+  }
+
+  /*  text eke size colour wens una*/
+  .booking__container label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    pointer-events: none;
+    transition: 0.3s;
+  }
+  /* input style wens una*/
+  .booking__container input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--primary-color);
+    color: var(--text-dark);
+  }
+
+  /* input eke click karam location eka animate wenw*/
+  .booking__container input:focus ~ label {
+    font-size: 0.8rem;
+    top: 0;
+  }
+  /* where are you goin eke stylwe wwenw*/
+  .booking__container .form__group p {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--text-light);
+  }
+  /* button eka*/
+  .booking__container .btn {
+    padding: 1rem;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+   /* button eka*/
+   .booking__container .btn:hover {
+    background-color: var(--primary-color-dark);
+  }
+
+  /* popular*/
+  .section__popular {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    text-align: center;
+    padding: 3rem;
+  }
+  /* ?*/
+  .popular__grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+      /* card hadanaw */
+  .popular__card {
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  /* card content*/
+  .popular__content {
+    padding: 1rem;
+  }
+  /* ?*/
+  .popular__card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+    /* card name css*/
+  .popular__card__header h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+
+  /* srilnka*/
+  .popular__content p {
+    color: var(--text-light);
+  } 
+
+  img {
+    width: 100%;
+    display: flex;
+  }
+
+  img:hover{
+    transform: scale(1.1);
+    
+  }
+  .section__container {
+     padding: 3rem 1rem;
+  }
+  
+
+  /* ashfq footer*/
+  .main-footer {
+    margin-top: auto;
+    background-color: rgb(38, 49, 58);
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    font-family: 'Agdasima', sans-serif;
+    font-size: larger;
+ }
+/*Topic color */
+  .main-footer h3,h4 {
+    color: rgb(105, 158, 161);
+    
+}
+/*logo */
+  .main-footer img {
+    width: 110px;
+    border-radius: 100%;
+}
+/*footer topic athara nil kotuwta dura */
+.footer-col-1 {
+    padding: 10px;
+}
+
+/*contact us yt text ek */
+.footer-col-1 p{
+    color: rgb(251, 251, 251);
+}
+/*Travel with us text */
+.main-footer h4 {
+    margin-left: 14px;
+    text-decoration: none;
+}
+/*filling bars */
+.footer-col-1 input {
+    border-radius: 5px;
+    border-style: none;
+    font-size: medium;
+}
+/*symbol and quick links style*/
+.footer-col-1 a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(251, 251, 251);
+    transition: 300ms;
+    justify-content: center;
+}
+
+.footer-col-1:nth-child(2) a{
+    margin-top: 5px;
+}
+
+.footer-col-1 a:hover{
+    color: #151515;
+}
+
+
+footer {
+    background-color: rgb(31, 40, 40);
+    text-align: center;
+    padding-bottom: 5px;
+}
+  
+  /* Add styles for error message */
+.error-message {
+    color: red;
+  }
+  
+  /* Add styles for the message container */
+  .message-container {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    font-weight:bolder;
+    
+  }
+
+
+/* Style for the "Book Now" button */
+.book-now-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-now-button a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Hover effect */
+.book-now-button:hover {
+  background-color: var(--primary-color-dark);
+}
